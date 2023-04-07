@@ -36,9 +36,9 @@ function Header(){
   position:"sticky",
   top:"0",backgroundRepeat:"repeat",
   backgroundImage:" url(bg.png)",
-  backgroundBlendMode: "lighten",height:"15vh",display:"flex",justifyContent:'space-between'}} >
+  backgroundBlendMode: "lighten",height:"15vh",display:"flex",justifyContent:'space-between',flexWrap:"wrap"}} >
                 <div style={{width:"30vw",display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center"}} ><a href="#home" ><img style={{ width:"200px"}} src="Screenshot (393).png" alt="logo"/></a></div>
-                <div style={{display:"flex",justifyContent:"space-evenly",width:"45vw",alignItems:"center"}}>
+                <div style={{display:"flex",justifyContent:"space-evenly",width:"45vw",alignItems:"center",flexWrap:"wrap"}}>
                     <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#pro">Learnings</a>
                     <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#lt">L&T</a>
                     <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#projects">Projects</a>
@@ -61,8 +61,8 @@ function Header(){
        
         function About(){
            
-            return <div id="home" style={{display:"flex",margin:"0% 1% 0% 1%"}}>
-                <div>
+            return <div id="home" style={{display:"flex",margin:"0% 1% 0% 1%",flexWrap:"wrap"}}>
+                <div style={{width:"45vw"}}>
                     <h1>Hii all, I'm Saumya! </h1>
                     <img style={{margin:"5px"}} src="https://media.tenor.com/V9VQBgdepfgAAAAC/marflrt.gif" height="100px" width="100px" />
                     <p style={{color:"gray",fontStyle:"italic",fontSize:"20px",letterSpacing:"1px"}}>Hey Everyone! I am Saumya Bisht. I will define myself as an explorer because I don't do a single thing at a time whereas I love to do multiple things as any idea which comes up in my mind,i just go with it.I believe that "SHAUK BADI CHEEZ HAI!.😀" So because of this perception of mine,I travel a lot. I love driving cars,bikes,cycles,scooters etc. Also I am a graduate in Computer Science Engineering & I've also made my way in the field of modelling. So, this page has all the links related to my codes, skills and social media platforms,you'll get them all while exploring my portfolio. As I love making new friends from all over the world,you can text me a "hii" or discuss anything with me. I am open to every text.❤ By the way my nickname is "Somi".</p>
@@ -116,7 +116,7 @@ function Header(){
                 </div>
         }
         function Profession(){
-            return <div id="pro" style={{display:"flex",justifyContent:"space-between",backgroundColor:"beige"}}>
+            return <div id="pro" style={{display:"flex",justifyContent:"space-between",backgroundColor:"beige",flexWrap:"wrap"}}>
                 <div><img src="learning from home.png" height="600px" alt=""/></div>
                 <div style={{width:"50%"}}>
                     <h2>What I am Doing!</h2>
@@ -194,7 +194,7 @@ src="https://www.youtube.com/embed/_aqcMDMzhPU">
         function Contact(){
             return <div id="footer">
                 <h2 align=" center">Reach Out To Me! </h2>
-                <div style={{display:"flex",justifyContent:"space-evenly"}}>
+                <div style={{display:"flex",justifyContent:"space-evenly",flexWrap:"wrap"}}>
                 <div style={{boxShadow:"0px 10px 20px -10px black",padding:"5%"}}>
                     <p style={{color:"gray"}}>DISCUSS A PROJECT OR ANYTHING ELSE OR JUST A HELLO!! MY INBOX IS OPEN TO ALL.💌</p>
                     <p style={{fontWeight:"bold",boxShadow:"10px 15px 25px -10px azure"}}><p>Just a Quote I believe in:-</p> "Our dreams can come true; if we have the courage to pursue them." - Walt Disney</p>
