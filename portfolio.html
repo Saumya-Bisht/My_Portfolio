@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saumya's Website</title>
+    <link rel="icon" href="cash fan.png"/>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+       
+</head>
+
+<body style="margin: 0; font-family: sans-serif;" id="root">
+    
+    <script type="text/babel">
+  
+
+  const mouseovertext=(e)=>{
+          
+          // e.target.style.textDecoration="underline";
+          e.target.style.color="#007bb5";
+
+        }
+        const mouseleavetext=(e)=>{
+          e.target.style.textDecoration="none";
+          e.target.style.color="black";
+        }
+function Header(){
+    let style={color:"black",textDecoration:"none",fontSize:"20px"}
+            return <div id="header" style={{position:"-webkit-sticky",
+  position:"sticky",
+  top:"0",backgroundRepeat:"repeat",
+  backgroundImage:" url(bg.png)",
+  backgroundBlendMode: "lighten",height:"15vh",display:"flex",justifyContent:'space-between'}} >
+                <div style={{width:"30vw",display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center"}} ><a href="#home" ><img style={{ width:"200px"}} src="Screenshot (393).png" alt="logo"/></a></div>
+                <div style={{display:"flex",justifyContent:"space-evenly",width:"45vw",alignItems:"center"}}>
+                    <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#pro">Learnings</a>
+                    <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#lt">L&T</a>
+                    <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#projects">Projects</a>
+                    <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#utube">Youtube</a>
+                    <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="https://www.hackerrank.com/saumyabisht05" target="_blank">HackerRank</a>
+                    <a onMouseOver={mouseovertext} onMouseLeave={mouseleavetext} style={style} href="#footer">Contact Me</a>
+                    </div>
+                </div>
+        }
+
+        let buttonstyle={color:"white",background:" linear-gradient(90deg, rgba(47,235,236,1) 26%, rgba(9,85,105,1) 96%)",border:"0",width:"150px",height:"50px",fontSize:"16px",borderRadius:"20% 0% 20% 0%",margin:"2%"}
+        const buttonChange=(e)=>{
+          e.target.style.background="#095569";
+          e.target.style.cursor="pointer";
+
+        }
+        const mouseleave=(e)=>{
+          e.target.style.background="linear-gradient(90deg, rgba(47,235,236,1) 26%, rgba(9,85,105,1) 96%)";
+        }
+       
+        function About(){
+           
+            return <div id="home" style={{display:"flex",margin:"0% 1% 0% 1%"}}>
+                <div>
+                    <h1>Hii all, I'm Saumya! </h1>
+                    <img style={{margin:"5px"}} src="https://media.tenor.com/V9VQBgdepfgAAAAC/marflrt.gif" height="100px" width="100px" />
+                    <p style={{color:"gray",fontStyle:"italic",fontSize:"20px",letterSpacing:"1px"}}>Hey Everyone! I am Saumya Bisht. I will define myself as an explorer because I don't do a single thing at a time whereas I love to do multiple things as any idea which comes up in my mind,i just go with it.I believe that "SHAUK BADI CHEEZ HAI!.😀" So because of this perception of mine,I travel a lot. I love driving cars,bikes,cycles,scooters etc. Also I am a graduate in Computer Science Engineering & I've also made my way in the field of modelling. So, this page has all the links related to my codes, skills and social media platforms,you'll get them all while exploring my portfolio. As I love making new friends from all over the world,you can text me a "hii" or discuss anything with me. I am open to every text.❤ By the way my nickname is "Somi".</p>
+                    <div style={{display:"flex",justifyContent:"space-evenly",width:"80%"}} class="social-container">
+   
+    <a href="https://www.facebook.com/saumyabisht07/" target="_blank" style={{  background: " #3B5998",
+  color: "white", padding: "20px",
+  fontSize: "30px",
+  width: "30px",
+  textAlign: "center",
+  textDecoration: "none",  borderRadius: "50%"}} class="fa fa-facebook"></a>
+    <a href="https://twitter.com/saumyabisht13" target="_blank"><i style={{  background: "#55ACEE",
+  color: "white", padding: "20px",
+  fontSize: "30px",
+  width: "30px",
+  textAlign: "center",
+  textDecoration: "none",  borderRadius: "50%"}} class="fa fa-twitter"></i></a>
+    <a href="mailto: saumyabisht05@gmail.com" target="_blank"><i  style={{  background: " #dd4b39",
+  color: "white", padding: "20px",
+  fontSize: "30px",
+  width: "30px",
+  textAlign: "center",
+  textDecoration: "none",  borderRadius: "50%"}} class="fa fa-google"></i></a>
+  <a href="https://www.linkedin.com/in/saumya-bisht-55b8b41b5/" target="_blank"><i  style={{  background: " #007bb5",
+  color: "white", padding: "20px",
+  fontSize: "30px",
+  width: "30px",
+  textAlign: "center",
+  textDecoration: "none",  borderRadius: "50%"}} class="fa fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/saumyabisht_13/" target="_blank"><i  style={{  background: " #ea4c89",
+  color: "white", padding: "20px",
+  fontSize: "30px",
+  width: "30px",
+  textAlign: "center",
+  textDecoration: "none",  borderRadius: "50%"}} class="fa fa-instagram"></i></a>
+  <a href="https://github.com/Saumya-Bisht" target="_blank"><i  style={{  background: " #000000",
+  color: "white", padding: "20px",
+  fontSize: "30px",
+  width: "30px",
+  textAlign: "center",
+  textDecoration: "none",  borderRadius: "50%"}} class="fa fa-github"></i></a>
+  
+    
+    </div>
+                    <a href="" target="_blank"><button class="butt" onMouseLeave={mouseleave} onMouseOver={buttonChange} style={buttonstyle}>See my Resume</button></a>
+                    <a href="#footer"><button class="butt" onMouseLeave={mouseleave} onMouseOver={buttonChange} style={buttonstyle}>Contact Me</button></a>
+                    </div>
+                <div><img src="laptop wave.png" height="700px" alt=""/>
+                  
+  </div>
+                </div>
+        }
+        function Profession(){
+            return <div id="pro" style={{display:"flex",justifyContent:"space-between",backgroundColor:"beige"}}>
+                <div><img src="learning from home.png" height="600px" alt=""/></div>
+                <div style={{width:"50%"}}>
+                    <h2>What I am Doing!</h2>
+                    <img height="400px" src="studying.png" alt=""/>
+                    <ul style={{color:"gray",fontStyle:"italic",fontSize:"17px",letterSpacing:"1px"}}>
+                        <li>⚡ I’m currently learning DSA & Full Stack Web Development.</li>
+                        <li>⚡ All of my projects are available at <a style={{color:"black",textDecoration:"none"}} href="https://github.com/Saumya-Bisht" target="_blank">https://github.com/Saumya-Bisht</a></li>
+                        <li>⚡Ask me about Html, Css, Javascript</li>
+                        <li>⚡I’m currently working on "A food-ordering website".</li>
+                        <li>⚡Fun fact I think I am a funny vlogger and a multi-tasker who loves to explore new things. So please have a look on my youtube channel to meet the crazy version of me.🤩</li>
+                        </ul>
+                    </div>
+                </div>
+        }
+        function LnT(){
+            return <div id="lt" style={{backgroundColor:"azure"}}>
+                <h2 align="center">Languages & Tools(L & T)</h2>
+                <p style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",width:"55%",margin:"5% auto"}} align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="100" height="100"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="100" height="100"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="100" height="100"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="100" height="100"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="100" height="100"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="100" height="100"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="100" height="100"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="100" height="100"/> </a>  <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="100" height="100"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="100" height="100"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="100" height="100"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="100" height="100"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="100" height="100"/> </a> </p>
+                </div>
+        }
+        let cardstyle={margin:"15px",width:'300px',textAlign:'center',boxShadow:'0px 0px 10px #ebadff'}
+        let imgstyle={width:"100%", height:"350px",cursor:"pointer"}
+        function Projects(){
+          let titlestyle={color:"#095569",cursor:"pointer"}
+          let codestyle={color:"#55ACEE",fontSize:"larger",cursor:"pointer"}
+          let astyle={textDecoration:"none"}
+            return <div id="projects" style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"space-between",backgroundColor:"#f7f2f7"}}>
+                <h2>Projects</h2>
+                <div style={{display:"flex",flexWrap:"wrap"}}>
+                    <div style={cardstyle}>
+                      <a style={astyle} href="https://saumya-bisht.github.io/Image__Search_Using_Zenserp_API/" target="_blank"><img style={imgstyle} src="Screenshot (397).png"/></a>
+          <a style={astyle} href="https://saumya-bisht.github.io/Image__Search_Using_Zenserp_API/" target="_blank"> <h2 style={titlestyle}>Image Search Using API</h2></a>
+           <a style={astyle} href="https://github.com/Saumya-Bisht/Image__Search_Using_Zenserp_API" target="_blank"> <p  style={codestyle}>Source Code</p></a>
+        </div>
+        <div style={cardstyle}>
+          <a style={astyle} href="https://saumya-bisht.github.io/javascript-practice/410-05/" target="_blank"><img style={imgstyle} src="Screenshot (398).png"/></a>
+          <a style={astyle} href="https://saumya-bisht.github.io/javascript-practice/410-05/" target="_blank"><h2 style={titlestyle}>Quote Generator</h2></a>
+          <a style={astyle} href="https://github.com/Saumya-Bisht/javascript-practice/tree/main/410-05" target="_blank"> <p  style={codestyle}>Source Code</p></a>
+        </div>
+        <div style={cardstyle}>
+          <a style={astyle} href="https://saumya-bisht.github.io/javascript-practice/410-01/" target="_blank"><img style={imgstyle} src="Screenshot (399).png"/></a>
+          <a style={astyle} href="https://saumya-bisht.github.io/javascript-practice/410-01/" target="_blank"><h2 style={titlestyle}>Github Finder</h2></a>
+          <a style={astyle} href="https://github.com/Saumya-Bisht/javascript-practice/tree/main/410-01" target="_blank"> <p  style={codestyle}>Source Code</p></a>
+        </div>
+        <div style={cardstyle}>
+          <a style={astyle} href="https://saumya-bisht.github.io/javascript-practice/407-01/" target="_blank"><img style={imgstyle} src="Screenshot (400).png"/></a>
+          <a style={astyle} href="https://saumya-bisht.github.io/javascript-practice/407-01/" target="_blank"><h2 style={titlestyle}>Emoji Search Application</h2></a>
+          <a style={astyle} href="https://github.com/Saumya-Bisht/javascript-practice/tree/main/407-01" target="_blank"> <p  style={codestyle}>Source Code</p></a>
+        </div>
+                    
+                </div>
+                <a style={{margin:"5%"}}   href="https://github.com/Saumya-Bisht?tab=repositories" target="_blank"><button onMouseLeave={mouseleave} onMouseOver={buttonChange} style={buttonstyle}>More Projects</button></a>
+                </div>
+        }
+        let vidstyle={margin:"10px"}
+        function Youtube(){
+            return <div id="utube" style={{backgroundColor:"black",display:"flex",flexDirection:"column",alignItems:"center"}}>
+                <h2 style={{color:"white"}}> Youtube</h2>
+                <div>
+                    <iframe style={vidstyle} width="420" height="315"
+src="https://www.youtube.com/embed/Wg9qaM6I4JQ">
+</iframe>
+<iframe  style={vidstyle} width="420" height="315"
+src="https://www.youtube.com/embed/J9jnAbdQZMw">
+</iframe>
+<iframe  style={vidstyle} width="420" height="315"
+src="https://www.youtube.com/embed/_aqcMDMzhPU">
+</iframe>
+
+                </div>
+                <a href="https://www.youtube.com/@SaumyaBisht8055" target="_blank"><button style={{backgroundColor:"#f00",margin:"20% auto",color:"white",border:"0",width:"200px",height:"40px",fontSize:"large",borderRadius:"10px",cursor:"pointer"}}>Subscribe</button></a>
+                </div>
+        }
+    
+        function Contact(){
+            return <div id="footer">
+                <h2 align=" center">Reach Out To Me! </h2>
+                <div style={{display:"flex",justifyContent:"space-evenly"}}>
+                <div style={{boxShadow:"0px 10px 20px -10px black",padding:"5%"}}>
+                    <p style={{color:"gray"}}>DISCUSS A PROJECT OR ANYTHING ELSE OR JUST A HELLO!! MY INBOX IS OPEN TO ALL.💌</p>
+                    <p style={{fontWeight:"bold",boxShadow:"10px 15px 25px -10px azure"}}><p>Just a Quote I believe in:-</p> "Our dreams can come true; if we have the courage to pursue them." - Walt Disney</p>
+                    <p style={{fontSize:"20px"}}>📌LOCATION:-INDIA</p>
+                    <p style={{fontSize:"18px"}}>Open for Opportunities: YES! ALWAYS.</p>
+                    <div style={{display:"flex",justifyContent:"space-evenly",width:"80%"}} class="social-container">
+   
+   <a href="https://www.facebook.com/saumyabisht07/" target="_blank" style={{  background: " #3B5998",
+ color: "white", padding: "20px",
+ fontSize: "30px",
+ width: "30px",
+ textAlign: "center",
+ textDecoration: "none",  borderRadius: "50%"}} class="fa fa-facebook"></a>
+   <a href="https://twitter.com/saumyabisht13" target="_blank"><i style={{  background: "#55ACEE",
+ color: "white", padding: "20px",
+ fontSize: "30px",
+ width: "30px",
+ textAlign: "center",
+ textDecoration: "none",  borderRadius: "50%"}} class="fa fa-twitter"></i></a>
+   <a href="mailto: saumyabisht05@gmail.com" target="_blank"><i  style={{  background: " #dd4b39",
+ color: "white", padding: "20px",
+ fontSize: "30px",
+ width: "30px",
+ textAlign: "center",
+ textDecoration: "none",  borderRadius: "50%"}} class="fa fa-google"></i></a>
+ <a href="https://www.linkedin.com/in/saumya-bisht-55b8b41b5/" target="_blank"><i  style={{  background: " #007bb5",
+ color: "white", padding: "20px",
+ fontSize: "30px",
+ width: "30px",
+ textAlign: "center",
+ textDecoration: "none",  borderRadius: "50%"}} class="fa fa-linkedin"></i></a>
+ <a href="https://www.instagram.com/saumyabisht_13/" target="_blank"><i  style={{  background: " #ea4c89",
+ color: "white", padding: "20px",
+ fontSize: "30px",
+ width: "30px",
+ textAlign: "center",
+ textDecoration: "none",  borderRadius: "50%"}} class="fa fa-instagram"></i></a>
+ <a href="https://github.com/Saumya-Bisht" target="_blank"><i  style={{  background: " #000000",
+ color: "white", padding: "20px",
+ fontSize: "30px",
+ width: "30px",
+ textAlign: "center",
+ textDecoration: "none",  borderRadius: "50%"}} class="fa fa-github"></i></a>
+ 
+   
+   </div>
+                </div>
+                <div><img  style={{height:"500px",width:"350px",borderRadius:"50%",padding:"25px auto"}} src="IMG-8223.jpg" alt=""/></div>
+                </div>
+                <p align=" center" style={{color:"gray"}}>Made with 💖 by <strong style={{color:" #ea4c89"}}>SAUMYA BISHT</strong></p>
+                </div>
+        }
+
+function App(){
+           return <div>
+             <Header/>
+             <About/>
+             <Profession/>
+             <LnT/>
+             <Projects/>
+             <Youtube/>
+             <Contact/>
+            </div>
+        }
+
+    ReactDOM.render(<App/>,document.getElementById('root'))
+    </script>
+</body>
+</html>
