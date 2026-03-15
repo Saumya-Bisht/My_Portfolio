@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dream-blue: #B3E6F3;
+  --color-dream-pink: #F4D1E5;
+  --color-dream-purple: #E6E6FA;
+  --color-dream-mint: #E3F3C9;
+  --color-dream-apricot: #FFD2C1;
+  --color-dream-purple-dark: #818cf8;
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+:root {
+  background-color: #fdfcfd;
+}
+
+body {
+  overflow-x: hidden;
+  text-shadow: 0px 0px 1px rgba(0,0,0,0.05);
+}
+
+.dream-gradient {
+  background: linear-gradient(
+    -45deg,
+    #B3E6F3,
+    #F4D1E5,
+    #E6E6FA,
+    #E3F3C9,
+    #FFD2C1
+  );
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.1);
+}
+
+.footer-glass {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+h1, h2, h3, h4 {
+  @apply text-slate-950;
+}
+
+/* Use more specific selectors or utility classes instead of global overrides that break dark sections */
+.dream-text-main {
+  @apply text-slate-900;
+}
