@@ -14,7 +14,7 @@ export const portfolioData = {
     hackerRank: "https://www.hackerrank.com/saumyabisht05",
     crio: "https://www.crio.do/portfolio/saumyabisht05"
   },
-  resume: "https://drive.google.com/file/d/1fcluWeuoNNAc7rANNzNj_q7xWkDLLfG4/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1ofyrBvXA6dsGguvQU9bAeDCAAUkphNXH/view?usp=sharing",
   experience: [
     {
       company: "Exactspace",
