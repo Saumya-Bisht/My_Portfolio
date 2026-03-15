@@ -7,7 +7,7 @@ import {
   Instagram, 
   Youtube, 
   Mail, 
-  ExternalLink, 
+  // ExternalLink, 
   ChevronRight,
   Code2,
   Briefcase,
